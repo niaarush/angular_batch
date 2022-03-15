@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { MessageComponent } from './message/message.component';
 import { Message2Component } from './message2/message2.component';
 import { MoviesComponent } from './movies/movies.component';
+import { IndexComponent } from './index/index.component';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import { MoviesComponent } from './movies/movies.component';
     MessageComponent,
     Message2Component,
     MoviesComponent,
+    IndexComponent,
   ],
   imports: [
     BrowserModule,
