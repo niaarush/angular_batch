@@ -1,0 +1,23 @@
+.text-center{
+    text-align: center;
+}
+table th,td{
+    margin:10px;
+    border: 1px solid #000;
+}
+.odd{
+    color:red
+}
+.even{
+    color:green
+}
+.first{
+    background: grey;
+}
+.last{
+    background: black;
+}
+.btn{
+    color:red;
+    font-size:17px;
+}

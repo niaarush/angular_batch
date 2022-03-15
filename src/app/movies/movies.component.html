@@ -1,0 +1,30 @@
+<h3 [ngClass]="{'text-center':showcenter}">{{title}}</h3>
+<table>
+    <thead>
+        <tr>
+            <th>Sr No</th>
+            <th>Name</th>
+            <th>Year</th>
+            <th>Actor</th>
+            <th>No Of Comment</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let m of movies; let sr=index;let o=odd;let e=even;let f=first,let l=last" [ngClass]="{'odd':o,'even':e,'first':f,'last':l}" >
+            <td>{{sr+1}}</td>
+            <td>{{m.name}}</td>
+            <td>{{m.year}}</td>
+            <td>{{m.actors}}</td>
+            <td>
+                <span *ngFor="let c of m.comments;">{{c.msg}}</span>
+            </td>
+            <td>
+                <button class="btn" (click)="remove(sr)">X</button>
+            </td>
+
+        </tr>
+    </tbody>
+
+</table>
+
